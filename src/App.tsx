@@ -1,8 +1,8 @@
+import { Descricao } from "./pages/Descricao";
+
 function App() {
   return (
-    <div >
-      descricao
-    </div>
+    <Descricao />
   );
 }
 
