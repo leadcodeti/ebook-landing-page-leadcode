@@ -2,7 +2,10 @@ import { Descricao } from "./pages/Descricao";
 
 function App() {
   return (
-    <Descricao />
+    <>
+      <Descricao />
+      <hr />
+    </>
   );
 }
 
