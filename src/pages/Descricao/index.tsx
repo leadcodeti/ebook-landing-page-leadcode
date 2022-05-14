@@ -8,7 +8,7 @@ export function Descricao() {
   return (
     <div className="container">
       <div className="titulo">
-        Por que escolher esse e-book para a produção de uma landing page?
+        Por que escolher esse e-book para a produção de sua landing page?
       </div>
       <div className="gridLayout">
         <div className="categoryContainer">
