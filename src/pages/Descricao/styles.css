@@ -1,14 +1,20 @@
 .container {
   height: 100vh;
   width: 100vw;
-  background-color: #F2F2F2;
 
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 2rem;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and(max-width: 768px) {
+  .container {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .titulo {
@@ -17,7 +23,7 @@
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
-  color: #3076F2;
+  color: #3076f2;
 }
 
 .gridLayout {
@@ -29,6 +35,14 @@
 
   margin-top: 3.5rem;
   padding: 0 4rem 0 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .gridLayout {
+    display: grid;
+    grid-template-columns: 26rem;
+    grid-template-rows: 8rem 8rem 8rem 8rem;
+  }
 }
 
 .categoryHeader {
@@ -52,7 +66,6 @@
 
   color: #9270c4;
 }
-
 
 p {
   max-width: 25rem;
