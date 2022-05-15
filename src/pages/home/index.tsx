@@ -1,7 +1,7 @@
 import { FiInstagram } from "react-icons/fi";
 import { FaFacebookF,FaTwitter } from "react-icons/fa";
-import Logo from "../assets/logo1.svg";
-import HomeImage from "../assets/modelo.svg";
+import Logo from "../../assets/logo1.svg";
+import HomeImage from "../../assets/modelo.svg";
 import styles from "./styles.module.scss";
 
 export function Home(){
