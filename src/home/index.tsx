@@ -35,7 +35,7 @@ export function Home(){
            <button>e-book download</button>
          </div>
          <div className={styles.contentImageHome}>
-           <img src={HomeImage} alt="home_image" />
+         <img src={HomeImage} alt="home_image" />
          </div>
        </div>
      </section>

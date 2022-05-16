@@ -1,5 +1,4 @@
 .wrapper{
-  width: 100%;
   height: 100vh;
   background:linear-gradient(205.32deg, rgba(95, 80, 182, 0.73) 38%,
    rgba(0, 110, 230, 0.9) 102.06%, rgba(69, 88, 195, 0.94) 102.06%);
@@ -49,5 +48,11 @@
     max-width: 1300px;
     margin: 0 auto;
     border: 2px solid red;
+
+    .contentImageHome {
+      img {
+        width: 50%;
+      }
+    }
   }
 }
