@@ -1,0 +1,45 @@
+.swiper-pagination-bullet-active {
+    background-color: #3977F2;
+}
+.swiper-pagination {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.swiper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        padding: 0 2rem;
+    }
+
+    .swiper-slide { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .swiper {
+        padding: 0 2rem;
+    }
+
+    .swiper-slide {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .swiper {
+        padding: 0 2rem;
+    }
+
+    .swiper-slide {
+        min-width: 45%;
+    }
+}

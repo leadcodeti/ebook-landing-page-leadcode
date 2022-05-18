@@ -2,17 +2,17 @@
     //max-width: 45rem;
     
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     color: #3076f2;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding-top: 5rem;
@@ -20,53 +20,69 @@
     .content {
         max-width: 480px;
         text-align: justify;
-    }
+        position: relative;
+        height: 250px;
 
-    .apresentation {
-        font-family: Roboto, sans-serif;
-        font-weight: normal;
-        font-size: 1rem;
-        text-align: justify;
-        color: #000;
-    }
+        @media (max-width: 720px) {
+            max-width: 600px;
 
-    .apresentationImg {
-        display: flex;
-        align-items: center;
-        
-
-        img {
-            width: 120px;
         }
 
-        .personInfos {
-            background:linear-gradient(205.32deg, rgba(95, 80, 182, 0.73) 38%, rgba(0, 110, 230, 0.9) 102.06%, rgba(69, 88, 195, 0.94) 102.06%);
-            color: #fff;
-            height: 3rem;
-            width: 250px;
+        .apresentation {
+            font-family: Roboto, sans-serif;
+            font-weight: normal;
+            padding-bottom: 2rem;
+            font-size: 1rem;
+            text-align: justify;
+            color: #000;
+            width: 95%;
+            height: 150px;
+        }
+
+        .apresentationImg {
             display: flex;
-            flex-direction: column;
-            padding-top: 0.25rem;
+            align-items: center;
             
-            h3 {
-                font-family: Roboto, sans-serif;
-                font-weight: normal;
-                margin-left: 1rem;
+            
+            .teste {
+                position: absolute;
+                
             }
-
-            p {
-                margin-left: 1rem;
-                font-weight: bold;
-                font-family: Roboto, sans-serif;
+    
+            .teste1 {
+                z-index: 99999;
+                
+            }
+    
+            img {
+                width: 120px;
+            }
+    
+            .personInfos {
+                background:linear-gradient(205.32deg, rgba(95, 80, 182, 0.73) 38%, rgba(0, 110, 230, 0.9) 102.06%, rgba(69, 88, 195, 0.94) 102.06%);
+                color: #fff;
+                height: 3rem;
+                width: 250px;
+                padding-top: 0.25rem;
+                position: relative;
+                right: 1rem;
+    
+                h3 {
+                    font-family: Roboto, sans-serif;
+                    font-weight: normal;
+                    font-size: 1rem;
+                    margin-left: 1.75rem;
+                }
+    
+                p {
+                    margin-left: 1.75rem;
+                    font-weight: bold;
+                    font-family: Roboto, sans-serif;
+                }
             }
         }
     }
 }
 
 
-@media screen and(max-width: 768px) {
-    .container {
-      height: 100%;
-      width: 100%;
-    }
-}
+
