@@ -1,5 +1,5 @@
 import styles from './styles.module.scss'
-import boxImg from '../../assets/pessoa.png'
+import boxImg from '../../assets/background-testemunhos.png'
 import imgTeste from '../../assets/pessoa-teste.png'
 import { Swiper, SwiperSlide} from 'swiper/react'
 import { Pagination, A11y } from 'swiper';
@@ -41,17 +41,16 @@ export function Testemunhos() {
                     <SwiperSlide>
                         <div className={styles.content}>
                             <p className={styles.apresentation}>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem numquam porro ipsum ipsa hic autem maiores, minima ullam repellat? Est qui facilis eligendi eaque autem nostrum enim beatae quisquam veniam.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             </p>     
 
                             <div className={styles.apresentationImg}>
-                                <img className={styles.teste1} src={boxImg} alt="tarja de descrição" />
-                                <img className={styles.teste} src={imgTeste} alt="" />
+                                <img className={styles.boxImg} src={boxImg} alt="tarja de descrição" />
+                                <img className={styles.imgTestimony} src={imgTeste} alt="" />
                             <div className={styles.personInfos}>
                                 <h3>Melissa Pillar</h3>
                                 <p>Desenvolvedora Front-end</p>
-                            </div>
-             
+                            </div>                    
                             </div>
                         </div>
                     </SwiperSlide>
@@ -63,8 +62,8 @@ export function Testemunhos() {
                             </p>     
 
                             <div className={styles.apresentationImg}>
-                                <img className={styles.teste1} src={boxImg} alt="tarja de descrição" />
-                                <img className={styles.teste} src={imgTeste} alt="" />
+                                <img className={styles.boxImg} src={boxImg} alt="tarja de descrição" />
+                                <img className={styles.imgTestimony} src={imgTeste} alt="" />
                             <div className={styles.personInfos}>
                                 <h3>Melissa Pillar</h3>
                                 <p>Desenvolvedora Front-end</p>
@@ -76,13 +75,12 @@ export function Testemunhos() {
                     <SwiperSlide>
                         <div className={styles.content}>
                             <p className={styles.apresentation}>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem numquam porro ipsum ipsa hic autem maiores, minima ullam repellat? Est qui facilis eligendi eaque autem nostrum enim beatae quisquam veniam.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                             </p>     
 
-
                             <div className={styles.apresentationImg}>
-                                <img className={styles.teste1} src={boxImg} alt="tarja de descrição" />
-                                <img className={styles.teste} src={imgTeste} alt="" />
+                                <img className={styles.boxImg} src={boxImg} alt="tarja de descrição" />
+                                <img className={styles.imgTestimony} src={imgTeste} alt="" />
                             <div className={styles.personInfos}>
                                 <h3>Melissa Pillar</h3>
                                 <p>Desenvolvedora Front-end</p>
@@ -90,14 +88,12 @@ export function Testemunhos() {
                             </div>
                         </div>
                     </SwiperSlide>
-
-
+                    
                 </Swiper>
-
-            
-
+                
+               
             </div>
-
+            
         </>
     )
 }

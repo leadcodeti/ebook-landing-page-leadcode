@@ -5,10 +5,10 @@ import { Testemunhos } from "./pages/testemunhos";
 function App() {
   return (
     <>
-      {/*<Home/>
+     {/* <Home/>
       <Descricao />*/}
-      <Testemunhos />
-      <FormContact />
+    <Testemunhos />
+    <FormContact />
     </>
   );
 }

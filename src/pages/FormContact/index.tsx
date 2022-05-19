@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 export function FormContact() {
     return (
         <>
-            <hr />
+            <div className={styles.hr}></div>
             <h1>Inscreva-se para receber nossos e-books</h1>
 
             <div className={styles.container}>
