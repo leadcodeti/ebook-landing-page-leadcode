@@ -13,7 +13,7 @@ export function Testemunhos() {
     return (
         <>
             <h1 className={styles.testemunhosTitle}>Veja os resultados que produzimos</h1>
-
+            
             <div className={styles.container}>         
                 <Swiper
                     modules={[Pagination, A11y]}
@@ -22,11 +22,9 @@ export function Testemunhos() {
                     loop
                     className={styles.swiper}
                     breakpoints={{
-                        // when window width is >= 640px
                         0: {
                             slidesPerView: 1,
                           },
-                          // when window width is >= 768px
                           768: {
                             slidesPerView: 2,
                           },
@@ -45,8 +43,8 @@ export function Testemunhos() {
                             </p>     
 
                             <div className={styles.apresentationImg}>
-                                <img className={styles.boxImg} src={boxImg} alt="tarja de descrição" />
-                                <img className={styles.imgTestimony} src={imgTeste} alt="" />
+                                <img className={styles.boxImg} src={boxImg} alt="background de testemunho" />
+                                <img className={styles.imgTestimony} src={imgTeste} alt="imagem de testemunho" />
                             <div className={styles.personInfos}>
                                 <h3>Melissa Pillar</h3>
                                 <p>Desenvolvedora Front-end</p>
@@ -62,8 +60,8 @@ export function Testemunhos() {
                             </p>     
 
                             <div className={styles.apresentationImg}>
-                                <img className={styles.boxImg} src={boxImg} alt="tarja de descrição" />
-                                <img className={styles.imgTestimony} src={imgTeste} alt="" />
+                                <img className={styles.boxImg} src={boxImg} alt="background de testemunho" />
+                                <img className={styles.imgTestimony} src={imgTeste} alt="imagem de testemunho" />
                             <div className={styles.personInfos}>
                                 <h3>Melissa Pillar</h3>
                                 <p>Desenvolvedora Front-end</p>
@@ -79,8 +77,8 @@ export function Testemunhos() {
                             </p>     
 
                             <div className={styles.apresentationImg}>
-                                <img className={styles.boxImg} src={boxImg} alt="tarja de descrição" />
-                                <img className={styles.imgTestimony} src={imgTeste} alt="" />
+                                <img className={styles.boxImg} src={boxImg} alt="background de testemunho" />
+                                <img className={styles.imgTestimony} src={imgTeste} alt="imagem de testemunho" />
                             <div className={styles.personInfos}>
                                 <h3>Melissa Pillar</h3>
                                 <p>Desenvolvedora Front-end</p>
