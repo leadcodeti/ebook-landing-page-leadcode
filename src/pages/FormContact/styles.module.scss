@@ -1,112 +1,129 @@
-.hr {
-    border-bottom: 1px solid rgba(143, 141, 141, 0.8);
-    max-width: 1300px;
-    margin: 5rem auto 0;
-}
+.wrapper {
+    height: 100%;
+    width: 100vw;
+    padding-top: 2em;
 
-h1 {
-    text-align: center;
+    background: linear-gradient(
+        205.32deg,
+        rgba(95, 80, 182, 0.73) 38%,
+        rgba(0, 110, 230, 0.9) 102.06%,
+        rgba(69, 88, 195, 0.94) 102.06%
+      );
+
+//   .hr {
+//     border-bottom: 1px solid rgba(143, 141, 141, 0.8);
+//     max-width: 1300px;
+//     margin: 5rem auto 0;
+//   }
+
+  h1 {
+    margin: 8rem 0 4rem 6rem;
     font-weight: 600;
     font-size: 2.5rem;
-    color: #3076f2;
-    margin-bottom: 3rem;
-    margin: 8rem 0 6rem;
-}
+    color: #FFFFFF;
+    text-align: center;
+  }
 
-.container {
+  .contentContainer {
     max-width: 1300px;
-    margin: 0 auto;   
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 
-    .ebookImg {
-        width: 50%;
 
-        @media (max-width: 1300px) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 2.5rem;
-            width: 100%;
-        }
+    .ebookImg {
+      width: 45%;
+
+      @media (max-width: 1300px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2.5rem;
+        width: 100%;
+      }
     }
 
     .ebookForm {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
 
-        @media (max-width: 1300px) {
-            display: flex;
-            width: 100%;
-        }
+      @media (max-width: 1300px) {
+        display: flex;
+        width: 100%;
+      }
     }
 
     form {
-        background:linear-gradient(205.32deg, rgba(95, 80, 182, 0.73) 38%, rgba(0, 110, 230, 0.9) 102.06%, rgba(69, 88, 195, 0.94) 102.06%);
-        width: 500px;
-        height: 450px;
+      background-color: transparent;
+      border: 4px dashed #FFFFFF;
+      width: 500px;
+      height: 450px;
+      text-align: center;
+      transition: 0.3s;
+
+      @media (max-width: 786px) {
+        border: none
+      }
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 2rem;
+        padding-top: 3rem;
+
+        img {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+
+      input {
+        border: none;
         border-radius: 2rem;
-        text-align: center;
-        transition: 0.3s;
+        width: 350px;
+        height: 50px;
+        outline: none;
+        margin-top: 2.5rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        &::placeholder {
+          font-size: 1rem;
+        }
+      }
+
+      button {
+        margin-top: 1.5rem;
+        width: 350px;
+        height: 50px;
+        background: #14BBEA;
+        //00ff00
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+        transition: 0.2s;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.5rem;
 
         &:hover {
-            filter: brightness(0.9);
+          filter: brightness(0.9);
         }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #FFF;
-            font-family: Roboto;
-            font-weight: bold;
-            font-size: 2rem;
-            padding-top: 5rem;
-
-            img {
-                width: 5rem;
-                height: 5rem;
-            }
-        }
-
-        input {
-            border: none;
-            border-radius: 2rem;
-            width: 350px;
-            height: 50px;
-            outline: none;
-            margin-top: 2.5rem;
-            padding-left: 1rem;
-            font-size: 1rem;
-            align-items: center;
-            justify-content: center;
-
-            &::placeholder {
-                font-size: 1rem;
-            }
-        }
-
-        button {
-            margin-top: 1.5rem;
-            width: 250px;
-            height: 50px;
-            background: #14BBEA;
-            border-radius: 2rem;
-            border: none;
-            outline: none;
-            transition: 0.2s;
-            color: #fff;
-            font-weight: bold;
-            font-size: 1.5rem;
-
-            &:hover {
-                filter: brightness(0.9);
-            }
-        }
+      }
     }
-
+  }
 }
