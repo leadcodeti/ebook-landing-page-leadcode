@@ -1,20 +1,22 @@
 .wrapper {
     height: 100%;
     width: 100vw;
-    padding-top: 2em;
+      padding-top: 2em;
 
-    background: linear-gradient(
+      // background-image: url("../../../public/images/fundo-em-degrade.svg");
+
+          background: linear-gradient(
         205.32deg,
         rgba(95, 80, 182, 0.73) 38%,
         rgba(0, 110, 230, 0.9) 102.06%,
         rgba(69, 88, 195, 0.94) 102.06%
       );
 
-//   .hr {
-//     border-bottom: 1px solid rgba(143, 141, 141, 0.8);
-//     max-width: 1300px;
-//     margin: 5rem auto 0;
-//   }
+  // .hr {
+  //   border-bottom: 1px solid rgba(143, 141, 141, 0.8);
+  //   max-width: 1300px;
+  //   margin: 5rem auto 0;
+  // }
 
   h1 {
     margin: 8rem 0 4rem 6rem;
@@ -42,6 +44,11 @@
         justify-content: center;
         padding-bottom: 2.5rem;
         width: 100%;
+      }
+
+      img {
+        height: 40rem;
+        width: 40rem;
       }
     }
 
