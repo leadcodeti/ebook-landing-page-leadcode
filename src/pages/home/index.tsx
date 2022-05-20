@@ -1,6 +1,6 @@
 import { FiInstagram } from "react-icons/fi";
 import { FaFacebookF,FaTwitter } from "react-icons/fa";
-import Logo from "../../assets/logo1.svg";
+import Logo from "../../assets/logo1.png";
 import HomeImage from "../../assets/modelo.png";
 import styles from "./styles.module.scss";
 import { DownloadButton } from "../../components/Buttons";
@@ -12,7 +12,6 @@ export function Home(){
      <header className={styles.header}>
        <div className={styles.headerLogo}>
          <img src={Logo} alt="logo_leadCode" />
-          <strong>&lt;LeadCode /&gt;</strong>
        </div>
        <div className={styles.socialMedia}>
          <a href="*">
@@ -37,7 +36,7 @@ export function Home(){
           <DownloadButton />
          </div>
          <div className={styles.contentImageHome}>
-           <img src={HomeImage} alt="home_image" />
+         <img src={HomeImage} alt="home_image" />
          </div>
        </div>
      </section>

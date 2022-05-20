@@ -1,12 +1,11 @@
 .container {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #f2f2f2;
 
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 1.5rem 0 0 0;
+  padding-top: 8rem;
 
   font-family: "Roboto", sans-serif;
 }
@@ -28,14 +27,15 @@
 }
 
 .gridLayout {
+  max-width: 1300px;
   display: grid;
-  grid-template-columns: 30rem 1fr;
+  grid-template-columns: 40rem 1fr;
   grid-template-rows: 8rem 1fr;
   grid-gap: 5rem 8rem;
   justify-content: center;
 
-  margin-top: 3.2rem;
-  padding: 0 4rem 0 4rem;
+  
+  margin-top: 6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -55,6 +55,7 @@
   font-size: 1.8rem;
   color: #4f4f60;
   text-align: center;
+
 }
 
 .icon {
@@ -62,7 +63,7 @@
   width: 4rem;
 
   display: block;
-  margin: 0 0 1.2rem 0;
+  margin: 0 0 1.5rem 0;
 }
 
 .eye {
@@ -78,16 +79,4 @@ p {
   font-size: 1.1rem;
   text-align: justify;
   color: black;
-}
-
-.divisor {
-  border: 1px solid #bbb;
-  width: 60rem;
-  margin: 1.4rem 10rem 0 10rem;
-}
-
-@media (max-width: 768px) {
-  .divisor {
-    border-style: none;
-  }
 }

@@ -3,9 +3,9 @@ import "./styles.css";
 export function Descricao() {
   return (
     <div className="container">
-      <div className="titulo">
+      <h1 className="titulo">
         Um guia para a sua landing page de alta conversão
-      </div>
+      </h1>
       <div className="gridLayout">
         <div className="categoryContainer">
           <div className="categoryHeader">
