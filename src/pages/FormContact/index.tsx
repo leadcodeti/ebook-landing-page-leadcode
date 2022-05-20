@@ -9,11 +9,11 @@ const initialState = {
     from_name: 'leadcoteti@gmail.com',
     to_name: '',
     message: `
-        <p>Obrigado por baixar o nosso e-book 'Como criar uma Landing Page que converte.</p>'
+        Obrigado por baixar o nosso e-book 'Como criar uma Landing Page que converte.
         
-       <p>Se esse é o seu primeiro contato com a Leadcode, prazer em conhecê-lo(a)! Se você gostou de nosso exemplo de Landing Page e gostar de nosso conteúdo que acabou de receber, conheça melhor a gente através de nosso site <<siteleadcode.com.br>> e nossos outros projetos.</p>
+       Se esse é o seu primeiro contato com a Leadcode, prazer em conhecê-lo(a)! Se você gostou de nosso exemplo de Landing Page e gostar de nosso conteúdo que acabou de receber, conheça melhor a gente através de nosso site <<siteleadcode.com.br>> e nossos outros projetos.
         
-        <p>Espero que tenhamos experiências incríveis juntos!</p>
+        Espero que tenhamos experiências incríveis juntos!
         `,
 } 
 
