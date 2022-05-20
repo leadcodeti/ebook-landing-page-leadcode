@@ -1,0 +1,14 @@
+.donwloadButton {
+  padding: 0.8rem 1rem;
+  color: #3677e8;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: #ffea04;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
