@@ -1,7 +1,10 @@
-export function Button(){
+
+import styles from './styles.module.scss';
+
+export function DownloadButton(){
   return(
     <div>
-      <button style={{padding:'20px'}}>Create User</button>
+       <button className={styles.donwloadButton}>Baixar e-book</button>
     </div>
   )
 }
