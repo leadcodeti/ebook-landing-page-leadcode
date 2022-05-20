@@ -45,13 +45,12 @@ export function FormContact() {
 
     return (
         <div className={styles.wrapper}>
-            <img src="images/textura-leadcode.svg" />
             <div className={styles.hr}></div>
             <h1>Baixe o e-book agora e arrase nas landing pages</h1>
 
             <div className={styles.contentContainer}>
                 <div className={styles.ebookImg}>
-                    <img src={ebookImg} alt="ebook digital imagem" />
+                    <img src='images/e-book.svg' alt="ebook digital imagem" />
                 </div>
                 <div className={styles.ebookForm}>
                     <form onSubmit={onSubmit}>
