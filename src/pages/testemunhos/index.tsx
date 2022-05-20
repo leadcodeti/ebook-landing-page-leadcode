@@ -1,9 +1,9 @@
 import styles from './styles.module.scss'
 import boxImg from '../../assets/background-testemunhos.png'
-import imgTeste from '../../assets/pessoa-teste.png'
 import imgHenrique from '../../assets/henrique.png'
 import imgLeonardo from '../../assets/leonardo.png'
 import imgJhonny from '../../assets/jhonny.png'
+import imgInes from '../../assets/ines.png'
 import { Swiper, SwiperSlide} from 'swiper/react'
 import { Pagination, A11y } from 'swiper';
 
@@ -76,7 +76,8 @@ export function Testemunhos() {
                     <SwiperSlide>
                         <div className={styles.content}>
                             <p className={styles.apresentation}>
-                            Realmente o e-book da LeadCode me ajudou bastante a melhorar as habilidades  e técnicas de desenvolvimento de uma landing page. Um e-book simples que  mostra o passo a passo de como criar uma landing page de sucesso e com altas chances de conversão.  Recomendo muito!                            </p>     
+                                Realmente o e-book da LeadCode me ajudou bastante a melhorar as habilidades  e técnicas de desenvolvimento de uma landing page. Um e-book simples que  mostra o passo a passo de como criar uma landing page de sucesso e com altas chances de conversão.  Recomendo muito!   
+                            </p>     
 
                             <div className={styles.apresentationImg}>
                                 <img className={styles.boxImg} src={boxImg} alt="background de testemunho" />
@@ -84,6 +85,23 @@ export function Testemunhos() {
                             <div className={styles.personInfos}>
                                 <h3>Jhonny Monteiro</h3>
                                 <p>Desenvolvedor Front-end</p>
+                            </div>                    
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className={styles.content}>
+                            <p className={styles.apresentation}>
+                                Realmente o e-book da LeadCode me ajudou bastante a melhorar as habilidades  e técnicas de desenvolvimento de uma landing page. Um e-book simples que  mostra o passo a passo de como criar uma landing page de sucesso e com altas chances de conversão.  Recomendo muito!   
+                            </p>     
+
+                            <div className={styles.apresentationImg}>
+                                <img className={styles.boxImg} src={boxImg} alt="background de testemunho" />
+                                <img className={styles.imgTestimony} src={imgInes} alt="imagem de testemunho" />
+                            <div className={styles.personInfos}>
+                                <h3>Inês Catarina</h3>
+                                <p>Designer</p>
                             </div>                    
                             </div>
                         </div>
