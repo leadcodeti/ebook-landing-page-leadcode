@@ -82,8 +82,8 @@ export function Testemunhos() {
                                 <img className={styles.boxImg} src={boxImg} alt="background de testemunho" />
                                 <img className={styles.imgTestimony} src={imgJhonny} alt="imagem de testemunho" />
                             <div className={styles.personInfos}>
-                                <h3>Melissa Pillar</h3>
-                                <p>Desenvolvedora Front-end</p>
+                                <h3>Jhonny Monteiro</h3>
+                                <p>Desenvolvedor Front-end</p>
                             </div>                    
                             </div>
                         </div>
