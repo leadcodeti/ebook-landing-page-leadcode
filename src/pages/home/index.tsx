@@ -3,9 +3,17 @@ import { FaFacebookF,FaTwitter } from "react-icons/fa";
 import Logo from "../../assets/logo1.png";
 import HomeImage from "../../assets/modelo.png";
 import styles from "./styles.module.scss";
-import { DownloadButton } from "../../components/Buttons";
+import { DownloadButton } from "../../components/Button";
+
+
 
 export function Home(){
+  function callToAction () {
+    window.addEventListener('click', () => {
+     window.scrollTo(0, 4000)
+    })
+  }
+
   return(
     <>
       <div className={styles.wrapper}>
@@ -33,7 +41,7 @@ export function Home(){
              Neste e-book você vai aprender <br/> fazer uma landing 
              page<br/> de altaconversão para <br/>o seu produto/serviço
            </p>
-          <DownloadButton />
+          <DownloadButton onClick={callToAction} text="Baixar e-book"/>
          </div>
          <div className={styles.contentImageHome}>
          <img src={HomeImage} alt="home_image" />

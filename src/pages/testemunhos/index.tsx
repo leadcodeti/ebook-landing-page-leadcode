@@ -15,8 +15,9 @@ import './slide.scss'
 export function Testemunhos() {
     return (
         <>
+            <div className={styles.hr}/>
             <h1 className={styles.testemunhosTitle}>Veja os resultados que produzimos</h1>
-            
+
             <div className={styles.container}>         
                 <Swiper
                     modules={[Pagination, A11y]}

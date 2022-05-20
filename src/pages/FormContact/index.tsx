@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import ebookImg from '../../assets/e-book.png'
 import logoLeadCode from '../../assets/logo1.png'
 import styles from './styles.module.scss'
+import { DownloadButton } from '../../components/Button';
 
 const initialState = {
     user_name: '',
@@ -70,7 +71,7 @@ export function FormContact() {
                             placeholder='Digite seu melhor e-mail'
                             onChange={handleChange} 
                             />
-                        <button type='submit'>Receber e-book grátis</button>
+                        <DownloadButton onClick={onSubmit} text="Baixar e-book grátis"/>
                     </form>   
                 </div>
             
