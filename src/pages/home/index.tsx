@@ -1,7 +1,12 @@
 import { FiInstagram } from "react-icons/fi";
 import { FaFacebookF,FaTwitter } from "react-icons/fa";
+<<<<<<< HEAD:src/home/index.tsx
 import Logo from "../assets/logo1.svg";
 import HomeImage from "../assets/modelo.png";
+=======
+import Logo from "../../assets/logo1.svg";
+import HomeImage from "../../assets/modelo.svg";
+>>>>>>> 3dd4b311fa4b7cebf64a4f15c8eb7e77905b27f2:src/pages/home/index.tsx
 import styles from "./styles.module.scss";
 import { DownloadButton } from "../components/Buttons";
 
