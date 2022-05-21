@@ -1,7 +1,18 @@
+::-webkit-scrollbar {
+  background-color: #3076f2;
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #829bca;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
 @media(max-width: 1080px) {
@@ -16,13 +27,19 @@
   }
 }
 
-body {
+body { 
+  font-family: 'Roboto','Comfortaa', sans-serif, cursive;
   background-color: #f2f2f2;
+
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+  font-family: 'Roboto', sans-serif;
 }
 
 button {

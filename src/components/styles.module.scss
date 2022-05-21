@@ -1,0 +1,22 @@
+.donwloadButton {
+  width: 230px;
+  height: 55px;
+  outline: none;
+  color: #3677e8;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  background-color: #ffea04;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  @media (max-width: 990px){
+    width: 250px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
