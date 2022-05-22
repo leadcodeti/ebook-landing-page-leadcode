@@ -2,12 +2,12 @@
   width: 230px;
   height: 55px;
   outline: none;
-  color: #3677e8;
+  color: var(--blue);
   border: none;
   border-radius: 0.8rem;
   font-size: 1.6rem;
   font-weight: 900;
-  background-color: #ffea04;
+  background-color: var(--yellow);
   transition: all 0.2s ease-in-out;
 
   &:hover {

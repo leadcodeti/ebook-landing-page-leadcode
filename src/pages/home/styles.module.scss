@@ -26,7 +26,7 @@
       }
 
       strong {
-        color: white;
+        color: var(--white);
         font-size: 1.5rem;
         font-weight: bold;
         margin-left: 0.5rem;
@@ -42,7 +42,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: white;
+        background-color: var(--white);
         border-radius: 11px;
         padding: 0.3rem;
         transition: all 0.2s ease-in-out;
@@ -62,8 +62,6 @@
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    //padding: 0 0.6rem;
-
 
     .content {
       display: flex;
@@ -117,18 +115,18 @@
 
     h1 {
       font-size: calc(1.2rem + 2.3vw);
-      color: white;
+      color: var(--white);
       font-weight: 700;
 
       span {
-        color: #ffea04;
+        color: var(--yellow);
       }
     }
 
     p {
       font-size:calc(1rem + 0.5vw) ;
       font-weight: 700;
-      color: white;
+      color: var(--white);
       font-family: "Comfortaa";
       padding: 25px 0 35px 0;
 

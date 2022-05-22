@@ -15,6 +15,14 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --white: #ffffff;
+  --blue: #3076f2;
+  --yellow: #ffea04;
+  --gray: #4f4f60;
+  --black: #000000;
+}
+
 @media(max-width: 1080px) {
   html {
       font-size: 93.75%;

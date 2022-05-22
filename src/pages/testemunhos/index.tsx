@@ -43,7 +43,7 @@ export function Testemunhos() {
                     <SwiperSlide>
                         <div className={styles.content}>
                             <p className={styles.apresentation}>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Realmente o e-book da LeadCode me ajudou bastante a melhorar as habilidades  e técnicas de desenvolvimento de uma landing page. Um e-book simples que  mostra o passo a passo de como criar uma landing page de sucesso e com altas chances de conversão.  Recomendo muito!   
                             </p>     
 
                             <div className={styles.apresentationImg}>

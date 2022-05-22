@@ -11,11 +11,11 @@
     font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
-    color: #3076f2;
+    color: var(--blue);
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -25,10 +25,9 @@
     padding-top: 5rem;
 
     .content {
-        max-width: 480px;
         text-align: justify;
         position: relative;
-        height: 250px;
+        height: 250Px;
 
         @media (max-width: 720px) {
             max-width: 600px;
@@ -38,43 +37,44 @@
         .apresentation {
             font-family: Roboto, sans-serif;
             font-weight: normal;
-            padding-bottom: 2rem;
-            font-size: 0.85rem;
+            font-size: 1rem;
             text-align: justify;
-            color: #000;
-            width: 95%;
+            color: var(--black);
             height: 150px;
 
             @media (max-width: 768px) {
                 padding-top: 1.5rem;
                 padding-bottom: 0;
             }
+
+            @media (max-width: 768px) {
+                height: 100px;
+            }
         }
 
         .apresentationImg {
             display: flex;
             align-items: center;
+            padding-top: 1rem;
             
             .boxImg {
                 z-index: 1;
+                width: 80px;
+                height: 80px;
            }
 
             .imgTestimony {
                 position: absolute;
                 border-radius: 30%;
                 z-index: 2;
-                left: 1rem;
-                width: 95px;
-                height: 85px;
-            }
-    
-            img {
-                width: 130px;
+                left: 0.7rem;
+                width: 60px;
+                height: 48px;
             }
     
             .personInfos {
                 background:linear-gradient(205.32deg, rgba(95, 80, 182, 0.73) 38%, rgba(0, 110, 230, 0.9) 102.06%, rgba(69, 88, 195, 0.94) 102.06%);
-                color: #fff;
+                color: var(--white);
                 height: 3rem;
                 width: 250px;
                 padding-top: 0.25rem;
@@ -95,9 +95,9 @@
                 }
             }
         }
+        
+        @media (max-width: 768px) {
+            height: 200px;
+        } 
     }
 }
-
-
-
-   
