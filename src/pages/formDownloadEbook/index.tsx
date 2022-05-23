@@ -16,16 +16,16 @@ const initialState = {
         
         Espero que tenhamos experiências incríveis juntos!
         `,
-} 
+}
 
-export function FormContact() {
+export function FormDownloadEbook() {
     const [toSend, setToSend] = useState(initialState);
 
-    const handleChange = (e:any) => {
-        setToSend({ ...toSend, [e.target.name]: e.target.value});
+    const handleChange = (e: any) => {
+        setToSend({ ...toSend, [e.target.name]: e.target.value });
     }
 
-    const onSubmit = (e:any) => {
+    const onSubmit = (e: any) => {
         e.preventDefault();
         emailjs.send(
             'ebook_delivery_service',
@@ -33,14 +33,14 @@ export function FormContact() {
             toSend,
             'uvmZIkRgQPgsOaQKM'
         )
-        .then((response) => {
-            console.log('SUCCESS', response.status, response.text);
-            alert('O seu e-book foi enviado com sucesso. Confirao o seu e-email.');
-        })
-        .catch((err) => {
-            console.log('FAILED...', err);
-            alert('ERROR')
-        });
+            .then((response) => {
+                console.log('SUCCESS', response.status, response.text);
+                alert('O seu e-book foi enviado com sucesso. Confirao o seu e-email.');
+            })
+            .catch((err) => {
+                console.log('FAILED...', err);
+                alert('ERROR')
+            });
         setToSend(initialState);
     }
 
@@ -58,23 +58,23 @@ export function FormContact() {
                             <img src={logoLeadCode} alt="logo LeadCode" />
                         </div>
                         <input
-                            type="text" 
+                            type="text"
                             name="user_name"
-                            value={toSend.user_name} 
+                            value={toSend.user_name}
                             placeholder='Digite o seu nome'
                             onChange={handleChange}
-                             />
-                        <input 
+                        />
+                        <input
                             type="email"
-                            name="to_name" 
-                            value={toSend.to_name} 
+                            name="to_name"
+                            value={toSend.to_name}
                             placeholder='Digite seu melhor e-mail'
-                            onChange={handleChange} 
-                            />
-                        <DownloadButton onClick={onSubmit} text="Baixar e-book grátis"/>
-                    </form>   
+                            onChange={handleChange}
+                        />
+                        <DownloadButton onClick={onSubmit} text="Baixar e-book grátis" />
+                    </form>
                 </div>
-            
+
             </div>
         </div>
     )
