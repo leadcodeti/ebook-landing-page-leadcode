@@ -42,14 +42,14 @@ export function Testimonies() {
 
                     <SwiperSlide>
                         <div className={styles.content}>
-                            <p className={styles.testimonyApresentationText}>
+                            <p className={styles.testimonyText}>
                                 Realmente o e-book da LeadCode me ajudou bastante a melhorar as habilidades  e técnicas de desenvolvimento de uma landing page. Um e-book simples que  mostra o passo a passo de como criar uma landing page de sucesso e com altas chances de conversão.  Recomendo muito!
                             </p>
 
-                            <div className={styles.testimonyApresentationSlide}>
-                                <img className={styles.testimonyApresentationBackground} src={backgroundTestimony} alt="background de testemunho" />
-                                <img className={styles.testimonyApresentationPersonImage} src={imgHenrique} alt="imagem de testemunho" />
-                                <div className={styles.testimonyApresentationPersonInfos}>
+                            <div className={styles.testimonySlide}>
+                                <img className={styles.frameBackground} src={backgroundTestimony} alt="background de testemunho" />
+                                <img className={styles.testimonyImage} src={imgHenrique} alt="imagem de testemunho" />
+                                <div className={styles.testimonyInfos}>
                                     <h3>Henrique Pereira</h3>
                                     <p>Desenvolvedor Front-end</p>
                                 </div>
@@ -59,14 +59,14 @@ export function Testimonies() {
 
                     <SwiperSlide>
                         <div className={styles.content}>
-                            <p className={styles.testimonyApresentationText}>
+                            <p className={styles.testimonyText}>
                                 A Leadcode mostrou que vai além da técnica em desenvolvimento, ela tem uma preocupação real de que o seu trabalho ajude o cliente a alcançar oss seus objetivos, ou seja, chamar a pessoa que acessa a Landing Page para a ação.  Li o seu ebook e tudo que eles mostram lá, eles aplicam e os resutados que tenho tido são a prova de que dá certo! 🙂
                             </p>
 
-                            <div className={styles.testimonyApresentationSlide}>
-                                <img className={styles.testimonyApresentationBackground} src={backgroundTestimony} alt="background de testemunho" />
-                                <img className={styles.testimonyApresentationPersonImage} src={imgLeonardo} alt="imagem de testemunho" />
-                                <div className={styles.testimonyApresentationPersonInfos}>
+                            <div className={styles.testimonySlide}>
+                                <img className={styles.frameBackground} src={backgroundTestimony} alt="background de testemunho" />
+                                <img className={styles.testimonyImage} src={imgLeonardo} alt="imagem de testemunho" />
+                                <div className={styles.testimonyInfos}>
                                     <h3>Leonardo Costa</h3>
                                     <p>Desenvolvedor Full-Stack</p>
                                 </div>
@@ -76,14 +76,14 @@ export function Testimonies() {
 
                     <SwiperSlide>
                         <div className={styles.content}>
-                            <p className={styles.testimonyApresentationText}>
+                            <p className={styles.testimonyText}>
                                 Realmente o e-book da LeadCode me ajudou bastante a melhorar as habilidades  e técnicas de desenvolvimento de uma landing page. Um e-book simples que  mostra o passo a passo de como criar uma landing page de sucesso e com altas chances de conversão.  Recomendo muito!
                             </p>
 
-                            <div className={styles.testimonyApresentationSlide}>
-                                <img className={styles.testimonyApresentationBackground} src={backgroundTestimony} alt="background de testemunho" />
-                                <img className={styles.testimonyApresentationPersonImage} src={imgJhonny} alt="imagem de testemunho" />
-                                <div className={styles.testimonyApresentationPersonInfos}>
+                            <div className={styles.testimonySlide}>
+                                <img className={styles.frameBackground} src={backgroundTestimony} alt="background de testemunho" />
+                                <img className={styles.testimonyImage} src={imgJhonny} alt="imagem de testemunho" />
+                                <div className={styles.testimonyInfos}>
                                     <h3>Jhonny Monteiro</h3>
                                     <p>Desenvolvedor Front-end</p>
                                 </div>
@@ -93,14 +93,14 @@ export function Testimonies() {
 
                     <SwiperSlide>
                         <div className={styles.content}>
-                            <p className={styles.testimonyApresentationText}>
+                            <p className={styles.testimonyText}>
                                 Realmente o e-book da LeadCode me ajudou bastante a melhorar as habilidades  e técnicas de desenvolvimento de uma landing page. Um e-book simples que  mostra o passo a passo de como criar uma landing page de sucesso e com altas chances de conversão.  Recomendo muito!
                             </p>
 
-                            <div className={styles.testimonyApresentationSlide}>
-                                <img className={styles.testimonyApresentationBackground} src={backgroundTestimony} alt="background de testemunho" />
-                                <img className={styles.testimonyApresentationPersonImage} src={imgInes} alt="imagem de testemunho" />
-                                <div className={styles.testimonyApresentationPersonInfos}>
+                            <div className={styles.testimonySlide}>
+                                <img className={styles.frameBackground} src={backgroundTestimony} alt="background de testemunho" />
+                                <img className={styles.testimonyImage} src={imgInes} alt="imagem de testemunho" />
+                                <div className={styles.testimonyInfos}>
                                     <h3>Inês Catarina</h3>
                                     <p>Designer</p>
                                 </div>

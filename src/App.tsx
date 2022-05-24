@@ -1,7 +1,7 @@
 import { Home } from "./pages/home";
 import { Descricao } from "./pages/Descricao";
-import { FormDownloadEbook } from "./pages/formDownloadEbook";
-import { Testimonies } from "./pages/testimonies";
+import { FormDownloadEbook } from "./pages/Form";
+import { Testimonies } from "./pages/Testimonies";
 function App() {
   return (
     <>

@@ -52,18 +52,18 @@
             }
         }
 
-        .testimonyApresentationSlide {
+        .testimonySlide {
             display: flex;
             align-items: center;
             padding-top: 1rem;
             
-            .testimonyApresentationBackground {
+            .frameBackground {
                 z-index: 1;
                 width: 80px;
                 height: 80px;
            }
 
-            .testimonyApresentationPersonImage {
+            .testimonyImage {
                 position: absolute;
                 border-radius: 30%;
                 z-index: 2;
@@ -72,7 +72,7 @@
                 height: 48px;
             }
     
-            .testimonyApresentationPersonInfos {
+            .testimonyInfos {
                 background:linear-gradient(205.32deg, rgba(95, 80, 182, 0.73) 38%, rgba(0, 110, 230, 0.9) 102.06%, rgba(69, 88, 195, 0.94) 102.06%);
                 color: var(--white);
                 height: 3rem;
