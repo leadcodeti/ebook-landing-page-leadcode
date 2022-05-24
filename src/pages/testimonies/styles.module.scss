@@ -28,13 +28,14 @@
         text-align: justify;
         position: relative;
         height: 250Px;
+        
 
         @media (max-width: 720px) {
             max-width: 600px;
 
         }
 
-        .testimonyApresentationText {
+        .testimonyText {
             font-family: Roboto, sans-serif;
             font-weight: normal;
             font-size: 1rem;
@@ -42,14 +43,6 @@
             color: var(--black);
             height: 150px;
 
-            @media (max-width: 768px) {
-                padding-top: 1.5rem;
-                padding-bottom: 0;
-            }
-
-            @media (max-width: 768px) {
-                height: 100px;
-            }
         }
 
         .testimonySlide {
@@ -70,6 +63,11 @@
                 left: 0.7rem;
                 width: 60px;
                 height: 48px;
+
+                @media (max-width: 768px) {
+                    left: inherit;
+                    margin-left: 0.75rem;
+                } 
             }
     
             .testimonyInfos {
@@ -98,6 +96,10 @@
         
         @media (max-width: 768px) {
             height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         } 
     }
 }
