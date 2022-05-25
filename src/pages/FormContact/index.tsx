@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "emailjs-com";
 import ebookImg from "../../assets/e-book.png";
 import logoLeadCode from "../../assets/logo1.png";
@@ -21,11 +21,11 @@ const initialState = {
 export function FormContact() {
   const [toSend, setToSend] = useState(initialState);
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
-  const onSubmit = (e: any) => {
+  const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     emailjs
       .send(
@@ -36,11 +36,11 @@ export function FormContact() {
       )
       .then((response) => {
         console.log("SUCCESS", response.status, response.text);
-        alert("O seu e-book foi enviado com sucesso. Confirao o seu e-email.");
+        alert("O seu e-book foi enviado com sucesso. Confira o seu e-email.");
       })
       .catch((err) => {
         console.log("FAILED...", err);
-        alert("ERROR");
+        alert("Por favor, preencha todos os campos");
       });
     setToSend(initialState);
   };
