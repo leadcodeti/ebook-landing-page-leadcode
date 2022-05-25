@@ -5,8 +5,6 @@ import HomeImage from "../../assets/modelo.png";
 import styles from "./styles.module.scss";
 import { DownloadButton } from "../../components/Button";
 
-
-
 export function Home(){
   function callToAction () {
     window.addEventListener('click', () => {
