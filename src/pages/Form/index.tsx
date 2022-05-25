@@ -16,36 +16,7 @@ const initialState = {
         
         Espero que tenhamos experiências incríveis juntos!
         `,
-<<<<<<< HEAD:src/pages/Form/index.tsx
 }
-
-export function FormDownloadEbook() {
-    const [toSend, setToSend] = useState(initialState);
-
-    const handleChange = (e: any) => {
-        setToSend({ ...toSend, [e.target.name]: e.target.value });
-    }
-
-    const onSubmit = (e: any) => {
-        e.preventDefault();
-        emailjs.send(
-            'ebook_delivery_service',
-            'ebook_delivery_form',
-            toSend,
-            'uvmZIkRgQPgsOaQKM'
-        )
-            .then((response) => {
-                console.log('SUCCESS', response.status, response.text);
-                alert('O seu e-book foi enviado com sucesso. Confirao o seu e-email.');
-            })
-            .catch((err) => {
-                console.log('FAILED...', err);
-                alert('ERROR')
-            });
-        setToSend(initialState);
-    }
-=======
-};
 
 export function FormContact() {
   const [toSend, setToSend] = useState(initialState);
@@ -73,48 +44,14 @@ export function FormContact() {
       });
     setToSend(initialState);
   };
->>>>>>> descricao:src/pages/FormContact/index.tsx
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.hr}></div>
 
-<<<<<<< HEAD:src/pages/Form/index.tsx
-            <div className={styles.contentContainer}>
-                <div className={styles.ebookImg}>
-                    <img src={ebookImg} alt="ebook digital imagem" />
-                </div>
-                <div className={styles.ebookForm}>
-                    <form onSubmit={onSubmit}>
-                        <div className={styles.logo}>
-                            <img src={logoLeadCode} alt="logo LeadCode" />
-                        </div>
-                        <input
-                            type="text"
-                            name="user_name"
-                            value={toSend.user_name}
-                            placeholder='Digite o seu nome'
-                            onChange={handleChange}
-                        />
-                        <input
-                            type="email"
-                            name="to_name"
-                            value={toSend.to_name}
-                            placeholder='Digite seu melhor e-mail'
-                            onChange={handleChange}
-                        />
-                        <DownloadButton onClick={onSubmit} text="Baixar e-book grátis" />
-                    </form>
-                </div>
-
-            </div>
-=======
-      <h1>Baixe o e-book agora e arrase nas landing pages</h1>
-
       <div className={styles.contentContainer}>
         <div className={styles.ebookImg}>
           <img src={ebookImg} alt="ebook digital imagem" />
->>>>>>> descricao:src/pages/FormContact/index.tsx
         </div>
         <div className={styles.ebookForm}>
           <form onSubmit={onSubmit}>
@@ -125,21 +62,22 @@ export function FormContact() {
               type="text"
               name="user_name"
               value={toSend.user_name}
-              placeholder="Digite o seu nome"
+              placeholder='Digite o seu nome'
               onChange={handleChange}
             />
             <input
               type="email"
               name="to_name"
               value={toSend.to_name}
-              placeholder="Digite seu melhor e-mail"
+              placeholder='Digite seu melhor e-mail'
               onChange={handleChange}
             />
-
             <DownloadButton onClick={onSubmit} text="Baixar e-book grátis" />
           </form>
         </div>
+
       </div>
+
     </div>
   );
 }

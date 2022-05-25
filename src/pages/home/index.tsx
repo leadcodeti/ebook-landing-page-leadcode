@@ -5,19 +5,12 @@ import HomeImage from "../../assets/modelo.png";
 import styles from "./styles.module.scss";
 import { DownloadButton } from "../../components/Button";
 
-<<<<<<< HEAD
-export function Home(){
-  function callToAction () {
-    window.addEventListener('click', () => {
-     window.scrollTo(0, 4000)
-    })
-=======
+
 export function Home() {
   function callToAction() {
     window.addEventListener("click", () => {
       window.scrollTo(0, 4000);
     });
->>>>>>> headline
   }
 
   return (
