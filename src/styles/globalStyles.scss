@@ -16,11 +16,19 @@
 }
 
 :root {
+
+  // Fonts //
+
   --white: #ffffff;
   --blue: #3076f2;
   --yellow: #ffea04;
   --gray: #4f4f60; 
+  --gray500:#d3d3d3;
   --black: #000000;
+
+  //Fonts//
+
+  --fontFamily:'Roboto','Comfortaa', sans-serif, cursive;
 }
 
 @media(max-width: 1080px) {
@@ -36,8 +44,8 @@
 }
 
 body { 
-  font-family: 'Roboto','Comfortaa', sans-serif, cursive;
-  background-color: #f2f2f2;
+  font-family: var(--fontFamily);
+  background-color: var(--white);
 
 }
 
@@ -46,16 +54,12 @@ a {
   text-decoration: none;
 }
 
-p, h1, h2, h3, h4, h5, h6, span {
-  font-family: 'Roboto', sans-serif;
-}
-
 button {
   cursor: pointer;
 }
 
 hr {
   height: 1px;
-  border: 1px solid #d3d3d3;
+  border: 1px solid var(--gray500);
   margin: 0 2rem 0 2rem;
 }
