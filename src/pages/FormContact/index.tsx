@@ -21,7 +21,7 @@ const initialState = {
 export function FormContact() {
     const [toSend, setToSend] = useState(initialState);
 
-    const handleChange = (e:any) => {
+    const handleChange = (e: { target: { name: any; value: any; }; }) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value});
     }
 
