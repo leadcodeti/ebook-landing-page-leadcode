@@ -1,11 +1,17 @@
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { ChangeEvent, FormEvent, useState } from "react";
+import { Inputs } from "../Inputs";
 import emailjs from "emailjs-com";
-import ebookImg from "../../assets/e-book.png";
-import logoLeadCode from "../../assets/logo1.png";
-import { toast } from "react-toastify";
 import styles from "./styles.module.scss";
-import { DownloadButton } from "../../components/Button/Button";
-import { Inputs } from "../../components/Inputs";
+import { DownloadButton } from "../Button/Button";
+import { toast } from "react-toastify";
 
 const initialState = {
   user_name: "",
@@ -20,7 +26,9 @@ const initialState = {
         `,
 };
 
-export function FormContact() {
+export function DownloadModalButton() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const [toSend, setToSend] = useState(initialState);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -49,19 +57,17 @@ export function FormContact() {
   };
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.hr}></div>
+    <>
+      <button className={styles.openModalButton} onClick={onOpen}>
+        Baixar e-book
+      </button>
 
-      <div className={styles.contentContainer}>
-        <div className={styles.ebookImg}>
-          <img src={ebookImg} alt="ebook digital imagem" />
-        </div>
-        <div className={styles.ebookForm}>
-          <form onSubmit={onSubmit}>
-            <div className={styles.formContent}>
-              <div className={styles.logo}>
-                <img src={logoLeadCode} alt="logo LeadCode" />
-              </div>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay className={styles.ModalOverlay} />
+        <ModalContent className={styles.ModalContent}>
+          <ModalCloseButton className={styles.ModalCloseButton} />
+          <div className={styles.ModalContext}>
+            <ModalBody className={styles.ModalBody}>
               <Inputs
                 type="text"
                 name="user_name"
@@ -77,10 +83,10 @@ export function FormContact() {
                 onChange={handleChange}
               />
               <DownloadButton onClick={onSubmit} text="Baixar e-book grátis" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+            </ModalBody>
+          </div>
+        </ModalContent>
+      </Modal>
+    </>
   );
 }
