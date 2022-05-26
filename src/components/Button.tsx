@@ -5,10 +5,10 @@ interface buttonProps {
   text: string;
 }
 
-export function DownloadButton({ onClick, text }: buttonProps){
-  return(
+export function DownloadButton({ onClick, text }: buttonProps) {
+  return (
     <div>
-       <button onClick={onClick} className={styles.donwloadButton}>{text}</button>
+      <button onClick={onClick} className={styles.donwloadButton}>{text}</button>
     </div>
   )
 }
