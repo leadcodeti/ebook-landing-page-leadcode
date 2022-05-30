@@ -36,8 +36,8 @@ export function Home() {
                 uma <span>landing page</span>
               </h1>
               <p>
-                Neste e-book você vai aprender <br /> fazer uma landing page
-                <br /> de altaconversão para <br />o seu produto/serviço
+                Neste e-book você vai aprender <br />a fazer uma landing page
+                <br /> de alta conversão para <br />o seu produto/serviço
               </p>
               <DownloadModalButton/>
             </div>
