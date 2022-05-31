@@ -30,11 +30,11 @@ export function Home() {
         <section className={styles.container}>
           <div className={styles.content}>
             <div className={styles.contentTextHome}>
-              {/* <h1>
+              <h1>
                 Aprenda a fazer
                 <br />
                 uma <span>landing page</span>
-              </h1> */}
+              </h1>
               <p>
                 Neste e-book você vai aprender <br />a fazer uma landing page
                 <br /> de alta conversão para <br />o seu produto/serviço
